@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <img src="assets/avatar.jpg" alt="Avatar" class="avatar">
+        <a class="navbar-name">Trung Hieu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="text-center">Contact</h1>
+        <p class="text-center">Let's get in touch</p>
+        
+        <form>
+            <table class="table table-bordered">
+            <tr>
+                <td><label for="fullname">Full Name</label></td>
+                <td><input type="text" class="form-control" id="fullname" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td><label for="id">ID</label></td>
+                <td><input type="text" class="form-control" id="id" name="id" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" class="form-control" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label>Gender</label></td>
+                <td>
+                <div class="gender-group">
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female" required> Female</label>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="major">Major</label></td>
+                <td>
+                <select id="major" class="form-control" name="major" required>
+                    <option value="IT">IT</option>
+                    <option value="CS">CS</option>
+                    <option value="DS">DS</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Date of Birth</label></td>
+                <td>
+                <div class="dob-group">
+                    <select name="day" id="day" class="form-control d-inline w-auto" required>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select name="month" id="month" class="form-control d-inline w-auto" required>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select>
+                    <select name="year" id="year" class="form-control d-inline w-auto" required>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                    </select>
+                </div>
+                </td>
+            </tr>
+            </table>
+
+            <div class="buttons text-center">
+            <input type="submit" class="btn btn-primary" value="Submit">
+            <input type="reset" class="btn btn-secondary" value="Reset">
+            </div>
+        </form>
+        <section class="contact-form">
+        
+    </div>
+
+    <footer class="text-center">
+        &copy; All rights reserved 2025
+    </footer>
+
+    <!-- Dark Mode Toggle Button -->
+    <button id="darkModeToggle" class="btn btn-dark">Toggle Dark Mode</button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Dark Mode Toggle -->
+    <script>
+        const toggleDarkMode = () => {
+            const currentTheme = document.body.getAttribute('data-theme');
+            if (currentTheme === 'light') {
+                document.body.setAttribute('data-theme', 'dark');
+                document.getElementById('darkModeToggle').textContent = 'Switch to Light Mode';
+            } else {
+                document.body.setAttribute('data-theme', 'light');
+                document.getElementById('darkModeToggle').textContent = 'Switch to Dark Mode';
+            }
+        };
+
+        // Attach the toggleDarkMode function to the button
+        document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+    </script>
+</body>
+</html>

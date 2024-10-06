@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body data-theme="light">
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <img src="assets/avatar.jpg" alt="Avatar" class="avatar">
+        <a class="navbar-name">Trung Hieu</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <h1 class="text-center">Project Manager</h1>
+        <p class="text-center">A 5th months internship experience as an PMA</p>
+
+        <div class="row">
+    
+            <div class="col-md-4">
+                <div class="section-title">Projects</div>
+                <div class="list-group">
+                    <a href="https://itsmetrunqhieu.github.io/D3-Car-Visualization/" class="list-group-item list-group-item-action">D3 Cars Dataset visualization</a>
+                    <a href="https://github.com/itsmetrunqhieu/Cv-builder" class="list-group-item list-group-item-action">Online CV Builder</a>
+                    <a href="https://github.com/kurel-prog/dsa_battleship_2023" class="list-group-item list-group-item-action">Battleship Game</a>
+                    <a href="https://github.com/duwcston/Food-Delivery-System" class="list-group-item list-group-item-action">Food Delivery System</a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="section-title">Work Experience</div>
+                <div class="list-group mb-4">
+                    <div class="list-group-item">
+                        <p><strong>IT Counsultis</strong> - Currently working at here</p>
+                        <a href="https://it-consultis.com">Visit ITC website ></a>
+                    </div>
+                    <div class="list-group-item">
+                        <p><strong>Github</strong> - You can preview my Github profile</p>
+                        <a href="https://github.com/itsmetrunqhieu">Visit my GitHub ></a>
+                    </div>
+                    <div class="list-group-item">
+                        <p><strong>Linkedln</strong> - You can preview my Linkedln</p>
+                        <a href="https://www.linkedin.com/in/itsmetrunghieu2709/">Visit my Linkedln ></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="section-title">Education</div>
+                <div class="list-group">
+                    <div class="list-group-item">
+                        <p>Curent GPA: 3.24/4.0</p>
+                        <ul>
+                            <li>Object Oriented Programming</li>
+                            <li>Data Structures & Algorithms</li>
+                            <li>Web Application</li>
+                            <li>Artificial Intelligence</li>
+                            <li>Human Computer Interaction</li>
+                            <li>Database Management Systems</li>
+                            <li>Discrete Mathematics</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="section-title">Reviews from my Teachers</div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="review-item">
+                    <p>Hieu was a brilliant student, always stood out with his assignments.</p>
+                    <p style="color: gray"><em>Dr.Sinh - Web Application Professor</em></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-item">
+                    <p>Hieu was a attentive student, always goes to class on time.</p>
+                    <p style="color: gray"><em>Mrs.Ha - Proba Teacher</em></p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="review-item">
+                    <p>Hieu was a smart student, his assignment exceeds my expectation.</p>
+                    <p style="color: gray"><em>Mr.Nghia - Web lab teacher</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center">
+        &copy; All rights reserved 2025
+    </footer>
+
+    <!-- Dark Mode Toggle Button -->
+    <button id="darkModeToggle" class="btn btn-dark">Toggle Dark Mode</button>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Dark Mode Toggle -->
+    <script>
+        const toggleDarkMode = () => {
+            const currentTheme = document.body.getAttribute('data-theme');
+            if (currentTheme === 'light') {
+                document.body.setAttribute('data-theme', 'dark');
+                document.getElementById('darkModeToggle').textContent = 'Switch to Light Mode';
+            } else {
+                document.body.setAttribute('data-theme', 'light');
+                document.getElementById('darkModeToggle').textContent = 'Switch to Dark Mode';
+            }
+        };
+
+        // Attach the toggleDarkMode function to the button
+        document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+    </script>
+</body>
+</html>

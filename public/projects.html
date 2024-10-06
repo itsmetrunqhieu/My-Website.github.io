@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body data-theme="light">
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <img src="assets/avatar.jpg" alt="Avatar" class="avatar">
+        <a class="navbar-name">Trung Hieu</a>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        
+        <h1 class="text-center">Projects</h1>
+        <p class="text-center">Here are a few of my standout projects during my time at university</p>
+
+        <div class="row">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-0">
+                  <div class="col-lg-6 col-md-6 p-1">
+                    <a class="portfolio-item" href="https://itsmetrunqhieu.github.io/D3-Car-Visualization/" target="_blank">
+                      <img class="img-fluid" src="assets/projects/CarDataVisual.png" alt="trunghieu-projects" />
+                      <div class="caption">
+                        <div class="caption-content">
+                          <div class="h2 flex-aic">Car Dataset Visualization<i class="fas fa-external-link-alt" style="font-size: 8px; margin-left: 5px;"></i></div>
+                          <p class="mb-0">A car visualization that compares items from different automakers and evaluates differences.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+            
+              <div class="col-lg-6 col-md-6 p-1">
+                <a class="portfolio-item" href="https://github.com/itsmetrunqhieu/Cv-builder" target="_blank">
+                  <img class="img-fluid" src="assets/projects/OnlineCVwebsite.png" alt="trunghieu-projects" />
+                  <div class="caption">
+                    <div class="caption-content">
+                      <div class="h2 flex-aic">Online CV Builder<i class="fas fa-external-link-alt" style="font-size: 8px; margin-left: 5px;"></i></div>
+                      <p class="mb-0">A software generate CV online!</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-6 col-md-6 p-1">
+                <a class="portfolio-item" href="https://github.com/kurel-prog/dsa_battleship_2023/" target="_blank">
+                  <img class="img-fluid" src="assets/projects/Battleship.png" alt="trunghieu-projects" />
+                  <div class="caption">
+                    <div class="caption-content">
+                      <div class="h2 flex-aic">Battelship<i class="fas fa-external-link-alt" style="font-size: 8px; margin-left: 5px;"></i></div>
+                      <p class="mb-0">A Battleship game which supports PVE & PVP</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="col-lg-6 col-md-6 p-1">
+                <a class="portfolio-item" href="https://github.com/duwcston/Food-Delivery-System" target="_blank">
+                  <img class="img-fluid" src="assets/projects/FoodDelivery.png" alt="trungquandev-projects" />
+                  <div class="caption">
+                    <div class="caption-content">
+                      <div class="h2 flex-aic">Food Delivery System<i class="fas fa-external-link-alt" style="font-size: 8px; margin-left: 5px;"></i></div>
+                      <p class="mb-0">A system manage database of food delivery!</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+        
+
+            </div>
+        </div>
+
+    </div>
+    
+    <footer class="text-center">
+        &copy; All rights reserved 2025
+    </footer>
+    
+    <!-- Dark Mode Toggle Button -->
+    <button id="darkModeToggle" class="btn btn-dark">Toggle Dark Mode</button>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+        <!-- Dark Mode Toggle -->
+        <script>
+            const toggleDarkMode = () => {
+                const currentTheme = document.body.getAttribute('data-theme');
+                if (currentTheme === 'light') {
+                    document.body.setAttribute('data-theme', 'dark');
+                    document.getElementById('darkModeToggle').textContent = 'Switch to Light Mode';
+                } else {
+                    document.body.setAttribute('data-theme', 'light');
+                    document.getElementById('darkModeToggle').textContent = 'Switch to Dark Mode';
+                }
+            };
+    
+            // Attach the toggleDarkMode function to the button
+            document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+        </script>
+    </body>
+</html>
+    
